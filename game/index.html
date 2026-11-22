@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Midnight Vault Job — a stealth heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0b14; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; width: 1280px; height: 800px; box-shadow: 0 0 60px #000; }
+  canvas { display: block; width: 1280px; height: 800px; background: #14141f; }
+  #hint {
+    position: absolute; left: 0; right: 0; bottom: -28px; text-align: center;
+    color: #8a8aa0; font-size: 13px; font-family: system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint">WASD / arrows to move &middot; hold Shift to sneak &middot; click floor to toss a coin &middot; click loot up close to grab it &middot; E = camera EMP</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
